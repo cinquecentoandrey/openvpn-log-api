@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenVPN Log API
+After=network.target
+
+[Service]
+User=ovpnloguser
+Group=ovpnloguser
+ExecStart=/usr/local/bin/openvpn-log-api
+WorkingDirectory=/etc/openvpn-log-api
+Restart=on-failure
+RestartSec=10
+Environment=CONFIG_PATH=/etc/openvpn-log-api/config/config.yaml
+
+[Install]
+WantedBy=multi-user.target

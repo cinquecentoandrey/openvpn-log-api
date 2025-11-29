@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  host: "0.0.0.0"
+
+auth:
+  api_token: ""
+  token_header: "X-API-Token"
+
+logging:
+  level: "info"
+  file_path: ""
+
+vpn:
+  logdba_path: "/usr/local/openvpn_as/scripts/logdba"
+  logdb_path: "sqlite:////usr/local/openvpn_as/etc/db/log.db"
+  timeout: 20
