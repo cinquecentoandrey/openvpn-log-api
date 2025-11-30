@@ -85,7 +85,7 @@ systemctl start openvpn-log-api
 11. If you've made changes to the firewall settings, it is necessary to restart OpenVPN.
 ---
 
-### Параметры конфигурации
+### Configuration params
 ```yaml
 server:
   port: 8080                                                    // Port on which the application accepts incoming HTTP requests.
